@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_components_input_select_fields",
+  "info": {
+    "displayName": "Input Select Field",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "default": "Label"
+    },
+    "Placeholder": {
+      "type": "string",
+      "default": "Placeholder"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": true
+    },
+    "Options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.select-option"
+    }
+  }
+}

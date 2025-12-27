@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_greencore_featured_blog_posts",
+  "info": {
+    "displayName": "Featured Blog Post",
+    "description": "Highlighted blog post section"
+  },
+  "options": {},
+  "attributes": {
+    "FeaturedBlog": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog.blog"
+    }
+  }
+}

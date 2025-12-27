@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_why_honeycomb_sections",
+  "info": {
+    "displayName": "Why Honeycomb Section",
+    "description": "Why Honeycomb doors explanation"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Why Honeycomb Doors"
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "Honeycomb doors for everything that's wrong with wood. They're lighter but stronger. Cheaper but longer-lasting."
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

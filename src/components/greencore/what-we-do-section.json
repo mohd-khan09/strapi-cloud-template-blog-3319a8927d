@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_greencore_what_we_do_sections",
+  "info": {
+    "displayName": "What We Do Section",
+    "description": "What We Do section with highlighted text"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "What We Do ?"
+    },
+    "HighlightText": {
+      "type": "string",
+      "default": "What We Do:"
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "We manufacture premium doors, panels and furniture using revolutionary honeycomb technology. Every product is crafted from 100% recycled materials - stronger than wood, lighter weight, and completely sustainable."
+    },
+    "SecondaryHighlight": {
+      "type": "string",
+      "default": "The crazy idea:"
+    },
+    "SecondaryDescription": {
+      "type": "richtext",
+      "default": "The Make furniture stronger than wood without cutting trees. We did it: 500+ projects prove recycled paper creates stronger materials. Our mission: Make wood obsolete."
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_greencore_product_configurator_sections",
+  "info": {
+    "displayName": "Product Configurator Section",
+    "description": "Interactive product configuration section"
+  },
+  "options": {},
+  "attributes": {
+    "Eyebrow": {
+      "type": "string",
+      "default": "Configure Your Product"
+    },
+    "Title": {
+      "type": "string",
+      "default": "Experience these advantages live - configure your perfect solution"
+    },
+    "ProductOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.product-option"
+    },
+    "MainProductImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_blog_authors",
+  "info": {
+    "displayName": "Blog Author",
+    "description": "Author information for blog posts"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Rohan Patel"
+    },
+    "Avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Bio": {
+      "type": "text"
+    }
+  }
+}

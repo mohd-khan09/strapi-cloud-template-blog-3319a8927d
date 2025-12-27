@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_our_impact_sections",
+  "info": {
+    "displayName": "Our Impact Section",
+    "description": "Impact statistics section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Our Impact"
+    },
+    "ImpactStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.impact-stat"
+    }
+  }
+}

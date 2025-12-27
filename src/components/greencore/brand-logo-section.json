@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_brand_logo_sections",
+  "info": {
+    "displayName": "Brand Logo Section",
+    "description": "Section displaying partner/brand logos"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Trusted By"
+    },
+    "Logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.brand-logo"
+    }
+  }
+}

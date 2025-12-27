@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_contact_heroes",
+  "info": {
+    "displayName": "Contact Hero",
+    "description": "Hero section for contact page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Contact Us"
+    },
+    "Description": {
+      "type": "text",
+      "default": "We're here to help with your honeycomb door needs. Reach out through any of the channels below and our team will assist you with product information, quotes, and technical support within 2 hours during business hours."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_application_cards",
+  "info": {
+    "displayName": "Application Card",
+    "description": "Individual application use case"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Title": {
+      "type": "string",
+      "default": "Residential Homes"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Perfect for modern homes prioritizing sustainability and design."
+    }
+  }
+}

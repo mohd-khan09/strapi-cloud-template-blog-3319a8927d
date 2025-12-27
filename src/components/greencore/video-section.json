@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_greencore_video_sections",
+  "info": {
+    "displayName": "Video Section",
+    "description": "Video section with title and description"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Zero Trees, Maximum Strength"
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "Ever wondered how recycled paper becomes stronger than oak? This 90-second factory tour reveals our secret: Watch honeycomb cells being crafted, tested to lifting loads, and transformed into doors that architects specify by name. No fancy editing - just raw manufacturing reality."
+    },
+    "VideoUrl": {
+      "type": "string",
+      "default": "https://www.youtube.com/watch?v=..."
+    },
+    "VideoThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "CTAButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    }
+  }
+}

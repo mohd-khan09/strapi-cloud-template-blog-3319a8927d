@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_future_tabs",
+  "info": {
+    "displayName": "Future Tab",
+    "description": "Tab item for green future section"
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "string",
+      "default": "Physical"
+    },
+    "Title": {
+      "type": "string",
+      "default": "offices"
+    }
+  }
+}

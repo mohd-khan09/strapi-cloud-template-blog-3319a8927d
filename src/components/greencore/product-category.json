@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_product_categories",
+  "info": {
+    "displayName": "Product Category",
+    "description": "Product category tab/filter"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Ecocel Doors"
+    },
+    "FeaturedProducts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

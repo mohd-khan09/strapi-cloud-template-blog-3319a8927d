@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_greencore_visit_factory_sections",
+  "info": {
+    "displayName": "Visit Factory Section",
+    "description": "Visit our factory section with map and address"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Visit Our"
+    },
+    "HighlightedText": {
+      "type": "string",
+      "default": "Factory"
+    },
+    "Address": {
+      "type": "text",
+      "default": "Survey No. 317/1, Site No. 4,3, Near Tadmore Academy, Ramasandra Village, Jigni Hobli, Anekal Taluk, Bangalore- 562106"
+    },
+    "MapImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "MapButtonText": {
+      "type": "string",
+      "default": "View Large Map"
+    },
+    "MapButtonLink": {
+      "type": "string",
+      "default": "#"
+    }
+  }
+}

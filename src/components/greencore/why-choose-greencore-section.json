@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_greencore_why_choose_greencore_sections",
+  "info": {
+    "displayName": "Why Choose Greencore Section",
+    "description": "Why choose GreenCore India benefits"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Why Choose Greencore India ?"
+    },
+    "Subtitle": {
+      "type": "text",
+      "default": "What other suppliers can't commit, we've built our reputation on these commitments."
+    },
+    "BenefitsLabel": {
+      "type": "string",
+      "default": "Why Choose Greencore India ?"
+    },
+    "Benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.benefit-item"
+    }
+  }
+}

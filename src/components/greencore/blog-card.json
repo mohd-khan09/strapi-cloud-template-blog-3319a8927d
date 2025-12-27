@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_greencore_blog_cards",
+  "info": {
+    "displayName": "Blog Card",
+    "description": "Individual blog post card"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Blog Post Title"
+    },
+    "Excerpt": {
+      "type": "text",
+      "default": "Short description of the blog post"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "Date": {
+      "type": "string",
+      "default": "Dec 24, 2024"
+    },
+    "ReadTime": {
+      "type": "string",
+      "default": "5 min read"
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    }
+  }
+}

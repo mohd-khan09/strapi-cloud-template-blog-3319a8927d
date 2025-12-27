@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_must_read_collections_sections",
+  "info": {
+    "displayName": "Must-Read Collections Section",
+    "description": "Featured blog posts section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Must-Read"
+    },
+    "HighlightedText": {
+      "type": "string",
+      "default": "Collections"
+    },
+    "FeaturedBlogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

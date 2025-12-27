@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_blog_landing_heroes",
+  "info": {
+    "displayName": "Blog Landing Hero",
+    "description": "Hero section for blog landing page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Blogs"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Real-world insights from 500+ projects and 18 years of building with honeycomb. Expert advice on doors for Indian projects - written by our team for homeowners, architects, and builders."
+    }
+  }
+}

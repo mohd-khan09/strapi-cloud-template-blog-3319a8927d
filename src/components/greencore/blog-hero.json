@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_greencore_blog_heroes",
+  "info": {
+    "displayName": "Blog Hero",
+    "description": "Hero section for blog posts with author info and metadata"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "default": "Why Wood-Free Furniture Is The Future (And Why You're Late)"
+    },
+    "Author": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.blog-author"
+    },
+    "PublishDate": {
+      "type": "date",
+      "required": true
+    },
+    "ReadTime": {
+      "type": "string",
+      "default": "8 Minute read"
+    },
+    "FeaturedImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Excerpt": {
+      "type": "text",
+      "default": "Three years ago, a Bangalore developer called us crazy for suggesting honeycomb doors. Last month, they ordered 500 units. Here's what changed their mind—and why you should pay attention before your competitor's do."
+    }
+  }
+}

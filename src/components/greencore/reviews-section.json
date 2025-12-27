@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_reviews_sections",
+  "info": {
+    "displayName": "Reviews Section",
+    "description": "Customer reviews and testimonials"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Customer Reviews"
+    },
+    "Reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.review-card"
+    }
+  }
+}

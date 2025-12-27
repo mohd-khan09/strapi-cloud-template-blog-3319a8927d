@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_our_team_sections",
+  "info": {
+    "displayName": "Our Team Section",
+    "description": "Team members showcase"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Our Team"
+    },
+    "TeamMembers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.team-member"
+    }
+  }
+}

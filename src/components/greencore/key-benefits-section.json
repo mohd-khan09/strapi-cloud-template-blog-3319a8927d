@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_key_benefits_sections",
+  "info": {
+    "displayName": "Key Benefits Section",
+    "description": "Key benefits with icon cards"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Key Benefits"
+    },
+    "Benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.benefit-card"
+    }
+  }
+}

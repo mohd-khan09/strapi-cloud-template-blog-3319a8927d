@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_faq_items",
+  "info": {
+    "displayName": "FAQ Item",
+    "description": "Individual FAQ question and answer"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string",
+      "default": "What is the core difference in a traditional material?"
+    },
+    "Answer": {
+      "type": "richtext",
+      "default": "Answer to the question"
+    }
+  }
+}

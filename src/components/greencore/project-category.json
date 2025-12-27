@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_greencore_project_categories",
+  "info": {
+    "displayName": "Project Category",
+    "description": "Category filter for projects with relation to projects"
+  },
+  "options": {},
+  "attributes": {
+    "CategoryName": {
+      "type": "string",
+      "required": true,
+      "default": "All Projects"
+    },
+    "CategorySlug": {
+      "type": "string",
+      "required": true,
+      "default": "all"
+    },
+    "Projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    }
+  }
+}

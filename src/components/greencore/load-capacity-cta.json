@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_greencore_load_capacity_ctas",
+  "info": {
+    "displayName": "Load Capacity CTA",
+    "description": "Questions about load capacity CTA section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Questions About Load Capacity or Sizing?"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Our technical team will review your requirements and recommend the perfect configuration for your project."
+    },
+    "CTAButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

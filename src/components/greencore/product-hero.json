@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_greencore_product_heroes",
+  "info": {
+    "displayName": "Product Hero",
+    "description": "Hero section for product pages with all details"
+  },
+  "options": {},
+  "attributes": {
+    "ProductName": {
+      "type": "string",
+      "required": true,
+      "default": "EcoCore Premium Door Panel"
+    },
+    "Description": {
+      "type": "text",
+      "default": "We manufacture premium doors, panels and furniture using revolutionary honeycomb technology from 100% recycled materials. Stronger than wood, lighter than traditional materials, completely sustainable."
+    },
+    "MainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "ThumbnailGallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "CoreMaterialLabel": {
+      "type": "string",
+      "default": "Core Material :"
+    },
+    "CoreMaterialOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.material-option"
+    },
+    "FinishingOptionsLabel": {
+      "type": "string",
+      "default": "Finishing Options:"
+    },
+    "FinishingOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.finishing-option"
+    },
+    "CTAButtons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.link"
+    }
+  }
+}

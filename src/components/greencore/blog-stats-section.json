@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_greencore_blog_stats_sections",
+  "info": {
+    "displayName": "Blog Stats Section",
+    "description": "Statistics display section for blog content"
+  },
+  "options": {},
+  "attributes": {
+    "Stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.stat-item"
+    }
+  }
+}

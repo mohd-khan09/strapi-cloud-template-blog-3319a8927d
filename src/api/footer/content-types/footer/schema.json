@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Description": {
+      "type": "text",
+      "default": "We Turn Tomorrow's Trash Into Today's Treasure, The furniture rebels making wood obsolete, one honeycomb at a time."
+    },
+    "Navigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.links-column",
+      "max": 6
+    }
+  }
+}

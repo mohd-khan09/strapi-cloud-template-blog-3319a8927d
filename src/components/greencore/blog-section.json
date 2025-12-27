@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_greencore_blog_sections",
+  "info": {
+    "displayName": "Blog Section",
+    "description": "Section displaying blog posts"
+  },
+  "options": {},
+  "attributes": {
+    "Eyebrow": {
+      "type": "string",
+      "default": "Blog"
+    },
+    "Title": {
+      "type": "string",
+      "default": "Sustainability stories and updates"
+    },
+    "FeaturedPosts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.blog-card",
+      "max": 4
+    },
+    "ViewAllButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    }
+  }
+}

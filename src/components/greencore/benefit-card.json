@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_benefit_cards",
+  "info": {
+    "displayName": "Benefit Card",
+    "description": "Individual benefit card with icon"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Title": {
+      "type": "string",
+      "default": "Sustainable Manufacturing"
+    },
+    "Description": {
+      "type": "text",
+      "default": "We transform recycled paper into revolutionary honeycomb furniture that's stronger than wood."
+    }
+  }
+}

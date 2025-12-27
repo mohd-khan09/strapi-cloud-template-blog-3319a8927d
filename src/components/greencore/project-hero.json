@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_project_heroes",
+  "info": {
+    "displayName": "Project Hero",
+    "description": "Hero section for project detail pages"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Project Details"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Every project tells a story of precision, craftsmanship, and innovation. Discover how we transform architectural visions into reality through sustainable materials and expert execution."
+    },
+    "BackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

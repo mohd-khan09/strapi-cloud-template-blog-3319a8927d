@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_greencore_testimonial_cards",
+  "info": {
+    "displayName": "Testimonial Card",
+    "description": "Individual testimonial with author info"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext",
+      "default": "Customer testimonial text"
+    },
+    "AuthorName": {
+      "type": "string",
+      "default": "John Doe"
+    },
+    "AuthorTitle": {
+      "type": "string",
+      "default": "CEO, Company Name"
+    },
+    "AuthorImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Rating": {
+      "type": "integer",
+      "default": 5,
+      "min": 1,
+      "max": 5
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_specification_rows",
+  "info": {
+    "displayName": "Specification Row",
+    "description": "Individual specification row in table"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "default": "Core Material"
+    },
+    "Value": {
+      "type": "string",
+      "default": "Recycled Paper Honeycomb"
+    }
+  }
+}

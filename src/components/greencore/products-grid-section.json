@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_products_grid_sections",
+  "info": {
+    "displayName": "Products Grid Section",
+    "description": "Products grid with categories and filters"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Our Products"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Premium honeycomb furniture engineered for strength, sustainability, and savings."
+    },
+    "Categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.product-category"
+    }
+  }
+}

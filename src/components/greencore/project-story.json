@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_project_stories",
+  "info": {
+    "displayName": "Project Story",
+    "description": "Project story/case study section"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "default": "Building sustainable spaces through innovation, quality, and precision engineering"
+    },
+    "Content": {
+      "type": "richtext",
+      "default": "This landmark project required 200+ doors across residential towers and retail units. The challenge? Delivering fire-rated solutions that wouldn't compromise the architect's minimalist vision..."
+    }
+  }
+}

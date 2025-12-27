@@ -1,26 +1,85 @@
 {
-  "collectionName": "components_shared_seos",
+  "collectionName": "components_seo_seos",
   "info": {
-    "name": "Seo",
-    "icon": "allergies",
-    "displayName": "Seo",
+    "displayName": "seo",
+    "icon": "search",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "metaTitle": {
+    "title": {
       "type": "string",
-      "required": true
+      "default": "Greencore India | Eco-Friendly Honeycomb Doors & Sustainable Furniture"
     },
-    "metaDescription": {
+    "description": {
       "type": "text",
-      "required": true
+      "default": "Leading manufacturer of eco-friendly honeycomb doors, sustainable furniture, and building materials in Bangalore. 100% recycled paper products with high load-bearing capacity. Established since 2011."
     },
-    "shareImage": {
+    "canonical": {
+      "type": "string",
+      "default": "https://greencoreindia.com/"
+    },
+    "keywords": {
+      "type": "string",
+      "default": "greencore india, honeycomb doors, sustainable furniture, eco-friendly doors, paper honeycomb, bangalore, wall partitions, acoustic doors, green building materials"
+    },
+    "og_url": {
+      "type": "string",
+      "default": "https://greencoreindia.com/"
+    },
+    "og_title": {
+      "type": "string",
+      "default": "Greencore India | Eco-Friendly Honeycomb Doors & Sustainable Furniture"
+    },
+    "og_description": {
+      "type": "text",
+      "default": "Leading manufacturer of eco-friendly honeycomb doors, sustainable furniture, and building materials in Bangalore. 100% recycled paper products with high load-bearing capacity."
+    },
+    "og_sitename": {
+      "type": "string",
+      "default": "Greencore India"
+    },
+    "og_locale": {
+      "type": "string",
+      "default": "en_US"
+    },
+    "og_type": {
+      "type": "string",
+      "default": "website"
+    },
+    "og_image": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "twitter_card": {
+      "type": "string",
+      "default": "summary_large_image"
+    },
+    "twitter_title": {
+      "type": "string",
+      "default": "Greencore India | Eco-Friendly Honeycomb Doors & Sustainable Furniture"
+    },
+    "twitter_description": {
+      "type": "text",
+      "default": "Leading manufacturer of eco-friendly honeycomb doors, sustainable furniture, and building materials in Bangalore. 100% recycled paper products with high load-bearing capacity."
+    },
+    "twitter_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "twitter_site": {
+      "type": "string"
+    },
+    "twitter_creator": {
+      "type": "string"
     }
   }
 }

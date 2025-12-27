@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_us",
+  "info": {
+    "singularName": "contact-us",
+    "pluralName": "contact-us-pages",
+    "displayName": "Contact Us",
+    "description": "Contact us page with form and factory location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.contact-hero"
+    },
+    "RequestQuoteSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.request-quote-section"
+    },
+    "VisitFactorySection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.visit-factory-section"
+    }
+  }
+}

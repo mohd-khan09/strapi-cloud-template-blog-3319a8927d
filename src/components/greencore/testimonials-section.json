@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_testimonials_sections",
+  "info": {
+    "displayName": "Testimonials Section",
+    "description": "Customer testimonials section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "What Our Customers Are Saying"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.testimonial-card"
+    }
+  }
+}

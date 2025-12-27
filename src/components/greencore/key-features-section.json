@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_key_features_sections",
+  "info": {
+    "displayName": "Key Features Section",
+    "description": "Key features and benefits showcase"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Key Features & Benefits"
+    },
+    "Subtitle": {
+      "type": "text",
+      "default": "Why industry leaders choose honeycomb doors over traditional alternatives"
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.feature-card"
+    }
+  }
+}

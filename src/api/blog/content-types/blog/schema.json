@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
+    "description": "Blog articles and posts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "default": "Why Wood-Free Furniture Is The Future (And Why You're Late)"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.blog-hero"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "StatsSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.blog-stats-section"
+    },
+    "Conclusion": {
+      "type": "richtext"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Sustainability",
+        "Product Updates",
+        "Case Studies",
+        "Industry News",
+        "How-To Guides"
+      ],
+      "default": "Industry News"
+    },
+    "Tags": {
+      "type": "json"
+    },
+    "RelatedBlogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

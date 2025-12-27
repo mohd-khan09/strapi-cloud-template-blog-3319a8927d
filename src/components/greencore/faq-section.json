@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_faq_sections",
+  "info": {
+    "displayName": "FAQ Section",
+    "description": "Frequently asked questions section"
+  },
+  "options": {},
+  "attributes": {
+    "Eyebrow": {
+      "type": "string",
+      "default": "Our Addressing Heartfelt"
+    },
+    "Title": {
+      "type": "string",
+      "default": "Frequently Asked Question"
+    },
+    "FAQItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.faq-item"
+    }
+  }
+}

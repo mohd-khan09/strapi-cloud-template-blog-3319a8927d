@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_projects_grid_sections",
+  "info": {
+    "displayName": "Projects Grid Section",
+    "description": "All projects section with category filters"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "All Projects"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Browse through our portfolio of successfully delivered projects across various sectors."
+    },
+    "Categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.project-category"
+    }
+  }
+}

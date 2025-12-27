@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_greencore_benefit_items",
+  "info": {
+    "displayName": "Benefit Item",
+    "description": "Individual benefit with checkmark"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "default": "18 Years in Business, Zero Bankruptcy"
+    }
+  }
+}

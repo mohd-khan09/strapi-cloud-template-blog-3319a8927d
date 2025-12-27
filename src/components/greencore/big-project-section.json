@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_greencore_big_project_sections",
+  "info": {
+    "displayName": "Big Project Section",
+    "description": "Working on a big project CTA section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Working on a Big Project?"
+    },
+    "Description": {
+      "type": "text",
+      "default": "If you're ordering 20+ doors for a residential complex, hotel, or commercial building, talk to our project sales team directly."
+    },
+    "ServicesTitle": {
+      "type": "string",
+      "default": "We handle:"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.service-item"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

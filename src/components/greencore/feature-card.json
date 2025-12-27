@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_feature_cards",
+  "info": {
+    "displayName": "Feature Card",
+    "description": "Individual feature/benefit card"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Title": {
+      "type": "string",
+      "default": "Lightweight Construction"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Easy to handle and install due to their low weight."
+    }
+  }
+}

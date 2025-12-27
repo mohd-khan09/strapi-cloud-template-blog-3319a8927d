@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_components_links",
+  "info": {
+    "displayName": "Link",
+    "description": "Reusable link/button component"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "default": "Click here"
+    },
+    "Url": {
+      "type": "string",
+      "default": "/"
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

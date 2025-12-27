@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_perfect_for_space_sections",
+  "info": {
+    "displayName": "Perfect For Space Section",
+    "description": "Perfect for every space applications"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Perfect for Every Space"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Honeycomb doors are perfect for a variety of applications across industries"
+    },
+    "SpaceTypes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.space-type-card"
+    }
+  }
+}

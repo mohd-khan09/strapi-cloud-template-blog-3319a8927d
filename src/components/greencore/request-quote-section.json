@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_greencore_request_quote_sections",
+  "info": {
+    "displayName": "Request Quote Section",
+    "description": "Request a quote section with form and contact info"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Request a"
+    },
+    "HighlightedText": {
+      "type": "string",
+      "default": "Quote"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Honeycomb doors are perfect for a variety of applications across industries"
+    },
+    "FormTitle": {
+      "type": "string",
+      "default": "Form"
+    },
+    "NameFieldLabel": {
+      "type": "string",
+      "default": "Name"
+    },
+    "EmailFieldLabel": {
+      "type": "string",
+      "default": "Email"
+    },
+    "MessageFieldLabel": {
+      "type": "string",
+      "default": "Message"
+    },
+    "ButtonText": {
+      "type": "string",
+      "default": "Request Project Quote"
+    },
+    "ContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.contact-info"
+    }
+  }
+}

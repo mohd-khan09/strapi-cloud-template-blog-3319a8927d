@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_advantages_sections",
+  "info": {
+    "displayName": "Advantages Section",
+    "description": "Section showcasing key advantages"
+  },
+  "options": {},
+  "attributes": {
+    "Eyebrow": {
+      "type": "string",
+      "default": "Advantages"
+    },
+    "Title": {
+      "type": "string",
+      "default": "4 Game-Changing Advantages That Are Revolutionizing Construction"
+    },
+    "Advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.advantage-card"
+    }
+  }
+}

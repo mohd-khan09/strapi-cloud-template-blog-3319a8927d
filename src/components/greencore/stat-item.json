@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_stat_items",
+  "info": {
+    "displayName": "Stat Item",
+    "description": "Individual statistic display card"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "string",
+      "required": true,
+      "default": "60%"
+    },
+    "Label": {
+      "type": "string",
+      "required": true,
+      "default": "Lighter"
+    },
+    "Description": {
+      "type": "text",
+      "default": "60% Lighter Than Wood"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_products_heroes",
+  "info": {
+    "displayName": "Products Hero",
+    "description": "Hero section for Products page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Products"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Premium honeycomb furniture engineered for India's toughest conditions. Fire-resistant for safety. Moisture-proof for monsoons. Termite-proof for longevity. 40% cheaper than wood. 3X stronger than MDF, and 100% guilt-free because zero trees were harmed."
+    }
+  }
+}

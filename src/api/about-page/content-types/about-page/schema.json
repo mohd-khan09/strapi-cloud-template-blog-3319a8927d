@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "About page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.about-hero"
+    },
+    "VideoSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.video-section"
+    },
+    "WhatWeDoSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.what-we-do-section"
+    },
+    "KeyBenefitsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.key-benefits-section"
+    },
+    "OurImpactSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.our-impact-section"
+    },
+    "OurTeamSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.our-team-section"
+    },
+    "ContactFormSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.contact-form-section"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_input_checkbox_fields",
+  "info": {
+    "displayName": "Input Checkbox Field"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "default": "Label"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

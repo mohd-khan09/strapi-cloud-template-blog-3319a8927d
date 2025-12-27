@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_greencore_error_404_contents",
+  "info": {
+    "displayName": "Error 404 Content",
+    "description": "404 error page content"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "default": "404!"
+    },
+    "Message1": {
+      "type": "text",
+      "default": "Looks like this page got lost in our warehouse."
+    },
+    "Message2": {
+      "type": "text",
+      "default": "Don't worry - everything else is right where it should be."
+    },
+    "ButtonText": {
+      "type": "string",
+      "default": "Back To Home"
+    },
+    "ButtonLink": {
+      "type": "string",
+      "default": "/"
+    },
+    "IllustrationImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

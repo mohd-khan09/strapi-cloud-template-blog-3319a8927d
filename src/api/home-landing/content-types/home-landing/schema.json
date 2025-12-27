@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_landings",
+  "info": {
+    "singularName": "home-landing",
+    "pluralName": "home-landings",
+    "displayName": "Home Landing Page",
+    "description": "Main landing page for GreenCore"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.hero-section"
+    },
+    "BrandLogoSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.brand-logo-section"
+    },
+    "WhyChooseSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.why-choose-section"
+    },
+    "FeaturedProductsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.featured-products-section"
+    },
+    "AdvantagesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.advantages-section"
+    },
+    "ProductConfiguratorSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.product-configurator-section"
+    },
+    "BlogSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.blog-section"
+    },
+    "GreenFutureSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.green-future-section"
+    },
+    "FAQSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.faq-section"
+    },
+    "TestimonialsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.testimonials-section"
+    }
+  }
+}

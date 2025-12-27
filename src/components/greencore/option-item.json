@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_greencore_option_items",
+  "info": {
+    "displayName": "Option Item",
+    "description": "Individual option item (color, material, etc.)"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "default": "Oak"
+    },
+    "Value": {
+      "type": "string",
+      "default": "oak"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "ColorCode": {
+      "type": "string",
+      "default": "#D4A574"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_greencore_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": "Main hero section with title and background image"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "India's First 100% Wood-Free Furniture Revolution"
+    },
+    "BackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

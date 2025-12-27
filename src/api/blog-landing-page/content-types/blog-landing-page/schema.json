@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_landing_pages",
+  "info": {
+    "singularName": "blog-landing-page",
+    "pluralName": "blog-landing-pages",
+    "displayName": "Blog Landing Page",
+    "description": "Main blog listing page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.blog-landing-hero"
+    },
+    "VideoSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.video-section"
+    },
+    "BlogsGridSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.blogs-grid-section"
+    }
+  }
+}

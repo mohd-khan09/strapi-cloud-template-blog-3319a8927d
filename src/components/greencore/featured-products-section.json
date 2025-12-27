@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_featured_products_sections",
+  "info": {
+    "displayName": "Featured Products Section",
+    "description": "Grid of featured product cards"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Featured Products"
+    },
+    "Products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.product-card"
+    }
+  }
+}

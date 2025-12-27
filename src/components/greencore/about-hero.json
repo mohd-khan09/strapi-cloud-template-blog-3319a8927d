@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_about_heroes",
+  "info": {
+    "displayName": "About Hero",
+    "description": "Hero section for About page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "About"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Discover the complete Green Coe India story - from garage experiment to 500+ projects and half a million trees saved. Meet our team, tour our factory, and see why smart builders choose honeycomb over wood."
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": "Project case studies and portfolio items"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.project-hero"
+    },
+    "ProjectInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.project-info"
+    },
+    "StorySection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.project-story"
+    },
+    "RelatedProjects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "ReviewsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.reviews-section"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": ["Architecture", "Homes", "Office", "Commercial", "Residential"],
+      "default": "Homes"
+    }
+  }
+}

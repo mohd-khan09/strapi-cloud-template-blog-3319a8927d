@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_greencore_contact_form_sections",
+  "info": {
+    "displayName": "Contact Form Section",
+    "description": "Contact form with fields"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Ready to Transform Your Next Project?"
+    },
+    "Subtitle": {
+      "type": "text",
+      "default": "Get your custom quote in 24 hours. Join 500+ companies already saving 40% on furniture costs."
+    },
+    "FirstName": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.input-text-field"
+    },
+    "LastName": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.input-text-field"
+    },
+    "Email": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.input-text-field"
+    },
+    "ProjectType": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.input-select-field"
+    },
+    "EstimatedRequirement": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.input-text-field"
+    },
+    "TermsCheckbox": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.input-checkbox-field"
+    },
+    "SubmitButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    },
+    "SideImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

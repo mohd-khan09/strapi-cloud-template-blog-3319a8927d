@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_green_future_sections",
+  "info": {
+    "displayName": "Green Future Section",
+    "description": "Section with tabs for different categories"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Building India's green future"
+    },
+    "Tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.future-tab"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_greencore_contact_infos",
+  "info": {
+    "displayName": "Contact Info",
+    "description": "Contact information card (phone, email, address)"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Info"
+    },
+    "PhoneNumber": {
+      "type": "string",
+      "default": "+91 81508 00001"
+    },
+    "EmailAddress": {
+      "type": "string",
+      "default": "info@greencoreindia.com"
+    },
+    "AddressTitle": {
+      "type": "string",
+      "default": "Address info"
+    },
+    "Address": {
+      "type": "text",
+      "default": "09, Martin Street 8190 Polo Alto, San Francisco"
+    }
+  }
+}

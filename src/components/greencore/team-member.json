@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_team_members",
+  "info": {
+    "displayName": "Team Member",
+    "description": "Individual team member card"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Ranbir Bhiggaria"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Position": {
+      "type": "string",
+      "default": "CEO"
+    }
+  }
+}

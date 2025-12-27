@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "products_pages",
+  "info": {
+    "singularName": "products-page",
+    "pluralName": "products-pages",
+    "displayName": "Products Page",
+    "description": "Products listing/landing page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.products-hero"
+    },
+    "ManufacturingVideoSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.manufacturing-video-section"
+    },
+    "PerfectForEverySpaceSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.perfect-for-space-section"
+    },
+    "ProductsGridSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.products-grid-section"
+    },
+    "WhyChooseSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.why-choose-greencore-section"
+    },
+    "BigProjectSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.big-project-section"
+    },
+    "ApplicationsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.applications-section"
+    }
+  }
+}

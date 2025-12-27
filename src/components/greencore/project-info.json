@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_greencore_project_infos",
+  "info": {
+    "displayName": "Project Info",
+    "description": "Project information card (Client, Type, Location, Year)"
+  },
+  "options": {},
+  "attributes": {
+    "ClientTitle": {
+      "type": "string",
+      "default": "Aldar Properties, Muscat"
+    },
+    "Client": {
+      "type": "string",
+      "default": "Aldar Properties, Muscat"
+    },
+
+    "ProjectTypeTitle": {
+      "type": "string",
+      "default": "Commercial, High-Rise"
+    },
+    "ProjectType": {
+      "type": "string",
+      "default": "Commercial, High-Rise"
+    },
+    "LocationTitle": {
+      "type": "string",
+      "default": "Muscat, Muscat, Oman"
+    },
+    "Location": {
+      "type": "string",
+      "default": "Muscat, Muscat, Oman"
+    },
+    "YearTitle": {
+      "type": "string",
+      "default": "2023"
+    },
+    "Gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Year": {
+      "type": "string",
+      "default": "2023"
+    }
+  }
+}

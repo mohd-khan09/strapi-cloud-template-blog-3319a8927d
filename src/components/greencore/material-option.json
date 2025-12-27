@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_material_options",
+  "info": {
+    "displayName": "Material Option",
+    "description": "Core material option (Standard/Premium Honeycomb)"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Standard Honeycomb"
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

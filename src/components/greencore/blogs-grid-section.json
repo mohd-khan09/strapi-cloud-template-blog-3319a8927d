@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_blogs_grid_sections",
+  "info": {
+    "displayName": "Blogs Grid Section",
+    "description": "Blog posts grid display section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Must-Read"
+    },
+    "HighlightedText": {
+      "type": "string",
+      "default": "Collections"
+    },
+    "FeaturedBlogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

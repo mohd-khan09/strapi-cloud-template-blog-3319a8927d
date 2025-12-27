@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_greencore_manufacturing_video_sections",
+  "info": {
+    "displayName": "Manufacturing Video Section",
+    "description": "Manufacturing process video showcase"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "See Our Manufacturing Process"
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "Watch this 90-second video shows our facility turning 100% recycled materials into doors that architects trust. Watch live stress testing, see our quality control checkpoints, and understand why builders choose honeycomb."
+    },
+    "VideoUrl": {
+      "type": "string",
+      "default": "https://www.youtube.com/watch?v=..."
+    },
+    "VideoThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "CTAButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    }
+  }
+}

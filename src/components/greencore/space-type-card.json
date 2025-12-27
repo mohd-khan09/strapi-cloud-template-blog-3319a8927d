@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_greencore_space_type_cards",
+  "info": {
+    "displayName": "Space Type Card",
+    "description": "Individual space type application card"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "Title": {
+      "type": "string",
+      "default": "Residential Homes"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Affordable and easy to install for bedrooms, bathrooms, and kitchens in apartments and villas."
+    }
+  }
+}

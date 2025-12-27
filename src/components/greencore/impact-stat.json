@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_impact_stats",
+  "info": {
+    "displayName": "Impact Stat",
+    "description": "Individual impact statistic"
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "string",
+      "default": "5 Hundred"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Major Projects delivered successfully"
+    }
+  }
+}

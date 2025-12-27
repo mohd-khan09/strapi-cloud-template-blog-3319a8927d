@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_greencore_product_options",
+  "info": {
+    "displayName": "Product Option",
+    "description": "Product configuration option with variants"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "default": "Material"
+    },
+    "Options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.option-item"
+    }
+  }
+}

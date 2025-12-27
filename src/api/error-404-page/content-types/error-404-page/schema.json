@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "error_404_pages",
+  "info": {
+    "singularName": "error-404-page",
+    "pluralName": "error-404-pages",
+    "displayName": "404 Page",
+    "description": "404 error page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "ErrorContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.error-404-content"
+    }
+  }
+}

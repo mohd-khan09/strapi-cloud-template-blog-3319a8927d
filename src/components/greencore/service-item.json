@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_greencore_service_items",
+  "info": {
+    "displayName": "Service Item",
+    "description": "Individual service offering with bullet point"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "default": "Custom door designs (non-standard sizes, special finishes)"
+    }
+  }
+}

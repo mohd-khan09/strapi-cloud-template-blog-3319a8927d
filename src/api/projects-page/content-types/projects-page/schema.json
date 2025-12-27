@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects_pages",
+  "info": {
+    "singularName": "projects-page",
+    "pluralName": "projects-pages",
+    "displayName": "Projects Page",
+    "description": "Landing page for all projects showcase"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "HeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.projects-hero"
+    },
+    "VideoSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.video-section"
+    },
+    "ProjectsGridSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.projects-grid-section"
+    },
+    "MustReadCollectionsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.must-read-collections-section"
+    }
+  }
+}

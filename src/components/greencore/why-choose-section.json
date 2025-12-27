@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_greencore_why_choose_sections",
+  "info": {
+    "displayName": "Why Choose Section",
+    "description": "Section explaining why industry giants choose the product"
+  },
+  "options": {},
+  "attributes": {
+    "Eyebrow": {
+      "type": "string",
+      "default": "About"
+    },
+    "Title": {
+      "type": "string",
+      "default": "Why Industry Giants Choose Green Core?"
+    },
+    "HighlightNumber": {
+      "type": "string",
+      "default": "3X"
+    },
+    "HighlightText": {
+      "type": "string",
+      "default": "STRONGER"
+    },
+    "Description": {
+      "type": "richtext",
+      "default": "Engineered with advanced wood fibers and a next-gen bonding technology."
+    },
+    "CTAButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    }
+  }
+}

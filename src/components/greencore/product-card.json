@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_greencore_product_cards",
+  "info": {
+    "displayName": "Product Card",
+    "description": "Individual product card with image and title"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Functional Acoustic Panels"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    },
+    "Category": {
+      "type": "string",
+      "default": "Panels"
+    }
+  }
+}

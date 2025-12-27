@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_greencore_technical_specifications_sections",
+  "info": {
+    "displayName": "Technical Specifications Section",
+    "description": "Technical specifications table"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Technical specification"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Every detail engineered for maximum performance and sustainability. From recycled materials to certified safety standards - transparency you can trust."
+    },
+    "Specifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.specification-row"
+    },
+    "SpecificationLabel": {
+      "type": "string",
+      "default": "Technical specification"
+    },
+    "DetailsLabel": {
+      "type": "string",
+      "default": "Technical specification"
+    }
+  }
+}
