@@ -16,6 +16,10 @@
       "required": true,
       "default": "EcoCore Premium Door Panel"
     },
+    "FeaturedImage": {
+      "type": "media",
+      "allowedTypes": ["images"]
+    },
     "Slug": {
       "type": "uid",
       "targetField": "Name"
