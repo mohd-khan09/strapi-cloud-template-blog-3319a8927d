@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
-    "Eyebrow": {
-      "type": "string",
-      "default": "About"
-    },
     "Title": {
       "type": "string",
       "default": "Why Industry Giants Choose Green Core?"
+    },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "About"
     },
     "HighlightNumber": {
       "type": "string",
@@ -25,11 +25,6 @@
     "Description": {
       "type": "richtext",
       "default": "Engineered with advanced wood fibers and a next-gen bonding technology."
-    },
-    "CTAButton": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.link"
     }
   }
 }
