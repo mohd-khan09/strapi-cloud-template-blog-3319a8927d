@@ -11,9 +11,9 @@
       "default": "Featured Products"
     },
     "Products": {
-      "type": "component",
-      "repeatable": true,
-      "component": "greencore.product-card"
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product"
     }
   }
 }

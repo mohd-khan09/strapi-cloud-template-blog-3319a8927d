@@ -15,10 +15,9 @@
       "default": "Sustainability stories and updates"
     },
     "FeaturedPosts": {
-      "type": "component",
-      "repeatable": true,
-      "component": "greencore.blog-card",
-      "max": 4
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog"
     },
     "ViewAllButton": {
       "type": "component",

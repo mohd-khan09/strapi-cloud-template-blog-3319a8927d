@@ -282,13 +282,7 @@ export interface GreencoreBlogSection extends Struct.ComponentSchema {
   };
   attributes: {
     Eyebrow: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Blog'>;
-    FeaturedPosts: Schema.Attribute.Component<'greencore.blog-card', true> &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 4;
-        },
-        number
-      >;
+    FeaturedPosts: Schema.Attribute.Relation<'manyToMany', 'api::blog.blog'>;
     Title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Sustainability stories and updates'>;
     ViewAllButton: Schema.Attribute.Component<'components.link', false>;
@@ -491,7 +485,7 @@ export interface GreencoreFeaturedProductsSection
     displayName: 'Featured Products Section';
   };
   attributes: {
-    Products: Schema.Attribute.Component<'greencore.product-card', true>;
+    Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     Title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Featured Products'>;
   };
