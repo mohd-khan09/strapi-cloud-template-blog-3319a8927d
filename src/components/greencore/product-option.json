@@ -6,7 +6,11 @@
   },
   "options": {},
   "attributes": {
-    "Label": {
+    "MaterialLabel": {
+      "type": "string",
+      "default": "Material"
+    },
+    "SurfaceFinishLabel": {
       "type": "string",
       "default": "Material"
     },

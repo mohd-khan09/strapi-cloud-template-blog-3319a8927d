@@ -6,10 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "Eyebrow": {
-      "type": "string",
-      "default": "Configure Your Product"
-    },
     "Title": {
       "type": "string",
       "default": "Experience these advantages live - configure your perfect solution"

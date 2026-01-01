@@ -16,13 +16,11 @@
     },
     "Image": {
       "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": ["image"]
     },
-    "ColorCode": {
-      "type": "string",
-      "default": "#D4A574"
+    "ProductImage": {
+      "type": "media",
+      "allowedTypes": ["images"]
     }
   }
 }
