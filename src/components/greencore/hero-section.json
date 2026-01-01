@@ -15,6 +15,12 @@
       "multiple": false,
       "required": false,
       "allowedTypes": ["images"]
+    },
+    "BackgroundImageSm": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
     }
   }
 }
