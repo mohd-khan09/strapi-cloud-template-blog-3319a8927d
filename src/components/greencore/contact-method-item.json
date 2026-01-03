@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_greencore_contact_method_items",
+  "info": {
+    "displayName": "Contact Method Item",
+    "description": "Individual contact method with details"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Call Us"
+    },
+    "Line1": {
+      "type": "string",
+      "default": "Have delivery with our team"
+    },
+    "Line2": {
+      "type": "string",
+      "default": "+91 6355 60000"
+    },
+    "Line3": {
+      "type": "string",
+      "default": "Mon-Sat, 9 AM - 6 PM"
+    }
+  }
+}

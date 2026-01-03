@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_customer_reviews_quote_sections",
+  "info": {
+    "displayName": "Customer Reviews Quote Section",
+    "description": "Customer reviews section for quote page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Customer Reviews"
+    },
+    "HighlightedText": {
+      "type": "string",
+      "default": "Reviews"
+    },
+    "Reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.customer-review"
+    }
+  }
+}

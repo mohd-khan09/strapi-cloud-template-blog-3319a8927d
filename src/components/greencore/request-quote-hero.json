@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_request_quote_heroes",
+  "info": {
+    "displayName": "Request Quote Hero",
+    "description": "Hero section for request a quote page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Request a Quote"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Get a customized quote for your honeycomb door panel. Fill out the form below with your requirements, and our team will respond with detailed pricing and technical specifications quickly."
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.feature-item"
+    }
+  }
+}

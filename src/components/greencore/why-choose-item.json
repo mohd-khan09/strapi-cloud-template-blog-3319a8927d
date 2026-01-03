@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_why_choose_items",
+  "info": {
+    "displayName": "Why Choose Item",
+    "description": "Individual benefit item for why choose section"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "default": "16 Years in Business - Zero Bankruptcy"
+    },
+    "Icon": {
+      "type": "string",
+      "default": "check"
+    }
+  }
+}

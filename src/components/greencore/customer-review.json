@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_greencore_customer_reviews",
+  "info": {
+    "displayName": "Customer Review",
+    "description": "Individual customer review card"
+  },
+  "options": {},
+  "attributes": {
+    "Rating": {
+      "type": "integer",
+      "default": 5,
+      "min": 1,
+      "max": 5
+    },
+    "ReviewText": {
+      "type": "text",
+      "default": "Installed 100 doors in our Bangalore project. Zero complaints and panels installation was 30 faster than wood."
+    },
+    "CustomerName": {
+      "type": "string",
+      "default": "John Doe"
+    },
+    "CustomerAvatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

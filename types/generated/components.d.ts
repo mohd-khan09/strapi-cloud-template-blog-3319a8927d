@@ -126,7 +126,8 @@ export interface GreencoreAdvantagesSection extends Struct.ComponentSchema {
   };
   attributes: {
     Advantages: Schema.Attribute.Component<'greencore.advantage-card', true>;
-    Eyebrow: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Advantages'>;
+    HighlightedTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Advantages'>;
     Title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'4 Game-Changing Advantages That Are Revolutionizing Construction'>;
   };
@@ -403,6 +404,83 @@ export interface GreencoreContactInfo extends Struct.ComponentSchema {
   };
 }
 
+export interface GreencoreContactInfoSection extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_contact_info_sections';
+  info: {
+    description: 'Contact information section with multiple contact methods';
+    displayName: 'Contact Info Section';
+  };
+  attributes: {
+    ContactMethods: Schema.Attribute.Component<
+      'greencore.contact-method-item',
+      true
+    >;
+    Description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Honeycomb doors are perfect for a variety of applications across industries'>;
+    HighlightedText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Every Space'>;
+    Title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Perfect for Every Space'>;
+  };
+}
+
+export interface GreencoreContactMethodItem extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_contact_method_items';
+  info: {
+    description: 'Individual contact method with details';
+    displayName: 'Contact Method Item';
+  };
+  attributes: {
+    Line1: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Have delivery with our team'>;
+    Line2: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'+91 6355 60000'>;
+    Line3: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Mon-Sat, 9 AM - 6 PM'>;
+    Title: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Call Us'>;
+  };
+}
+
+export interface GreencoreCustomerReview extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_customer_reviews';
+  info: {
+    description: 'Individual customer review card';
+    displayName: 'Customer Review';
+  };
+  attributes: {
+    CustomerAvatar: Schema.Attribute.Media<'images'>;
+    CustomerName: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'John Doe'>;
+    Rating: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 5;
+          min: 1;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<5>;
+    ReviewText: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Installed 100 doors in our Bangalore project. Zero complaints and panels installation was 30 faster than wood.'>;
+  };
+}
+
+export interface GreencoreCustomerReviewsQuoteSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_customer_reviews_quote_sections';
+  info: {
+    description: 'Customer reviews section for quote page';
+    displayName: 'Customer Reviews Quote Section';
+  };
+  attributes: {
+    HighlightedText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Reviews'>;
+    Reviews: Schema.Attribute.Component<'greencore.customer-review', true>;
+    Title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Customer Reviews'>;
+  };
+}
+
 export interface GreencoreError404Content extends Struct.ComponentSchema {
   collectionName: 'components_greencore_error_404_contents';
   info: {
@@ -466,6 +544,19 @@ export interface GreencoreFeatureCard extends Struct.ComponentSchema {
   };
 }
 
+export interface GreencoreFeatureItem extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_feature_items';
+  info: {
+    description: 'Simple feature item with icon and text';
+    displayName: 'Feature Item';
+  };
+  attributes: {
+    Icon: Schema.Attribute.String & Schema.Attribute.DefaultTo<'check'>;
+    Text: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'24 Hour Response'>;
+  };
+}
+
 export interface GreencoreFeaturedBlogPost extends Struct.ComponentSchema {
   collectionName: 'components_greencore_featured_blog_posts';
   info: {
@@ -485,6 +576,8 @@ export interface GreencoreFeaturedProductsSection
     displayName: 'Featured Products Section';
   };
   attributes: {
+    HighlightedTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Featured Products'>;
     Products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     Title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Featured Products'>;
@@ -536,6 +629,7 @@ export interface GreencoreHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     BackgroundImage: Schema.Attribute.Media<'images'>;
+    BackgroundImageSm: Schema.Attribute.Media<'images'>;
     Title: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<"India's First 100% Wood-Free Furniture Revolution">;
   };
@@ -651,9 +745,9 @@ export interface GreencoreOptionItem extends Struct.ComponentSchema {
     displayName: 'Option Item';
   };
   attributes: {
-    ColorCode: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#D4A574'>;
-    Image: Schema.Attribute.Media<'images'>;
+    Image: Schema.Attribute.Media<'image'>;
     Label: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Oak'>;
+    ProductImage: Schema.Attribute.Media<'images'>;
     Value: Schema.Attribute.String & Schema.Attribute.DefaultTo<'oak'>;
   };
 }
@@ -736,8 +830,6 @@ export interface GreencoreProductConfiguratorSection
     displayName: 'Product Configurator Section';
   };
   attributes: {
-    Eyebrow: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Configure Your Product'>;
     MainProductImage: Schema.Attribute.Media<'images'>;
     ProductOptions: Schema.Attribute.Component<
       'greencore.product-option',
@@ -785,8 +877,11 @@ export interface GreencoreProductOption extends Struct.ComponentSchema {
     displayName: 'Product Option';
   };
   attributes: {
-    Label: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Material'>;
+    MaterialLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Material'>;
     Options: Schema.Attribute.Component<'greencore.option-item', true>;
+    SurfaceFinishLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Material'>;
   };
 }
 
@@ -914,6 +1009,59 @@ export interface GreencoreProjectsHero extends Struct.ComponentSchema {
     Description: Schema.Attribute.Text &
       Schema.Attribute.DefaultTo<'Every project tells a story of precision, craftsmanship, and innovation. Discover how we transform architectural visions into reality through sustainable materials and expert execution.'>;
     Title: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Our Projects'>;
+  };
+}
+
+export interface GreencoreRequestQuoteForm extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_request_quote_forms';
+  info: {
+    description: 'Form configuration for request a quote';
+    displayName: 'Request Quote Form';
+  };
+  attributes: {
+    EmailFieldLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Your Contact Email'>;
+    EmailFieldPlaceholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Your Contact Email'>;
+    FormTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Request a Quote'>;
+    NameFieldLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Full Name'>;
+    NameFieldPlaceholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Full Name'>;
+    PhoneFieldLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Contact Number'>;
+    PhoneFieldPlaceholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Contact Number'>;
+    ProductFieldLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'An Interested Product/Project*'>;
+    ProductFieldPlaceholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Please Select'>;
+    ProductOptions: Schema.Attribute.JSON &
+      Schema.Attribute.DefaultTo<
+        ['Door Panels', 'Acoustic Panels', 'Custom Project']
+      >;
+    RequirementsFieldLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Product Requirements*'>;
+    RequirementsFieldPlaceholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Please Select'>;
+    SubmitButtonText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Request Project Quote'>;
+  };
+}
+
+export interface GreencoreRequestQuoteHero extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_request_quote_heroes';
+  info: {
+    description: 'Hero section for request a quote page';
+    displayName: 'Request Quote Hero';
+  };
+  attributes: {
+    Description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Get a customized quote for your honeycomb door panel. Fill out the form below with your requirements, and our team will respond with detailed pricing and technical specifications quickly.'>;
+    Features: Schema.Attribute.Component<'greencore.feature-item', true>;
+    Title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Request a Quote'>;
   };
 }
 
@@ -1195,6 +1343,34 @@ export interface GreencoreWhyChooseGreencoreSection
   };
 }
 
+export interface GreencoreWhyChooseItem extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_why_choose_items';
+  info: {
+    description: 'Individual benefit item for why choose section';
+    displayName: 'Why Choose Item';
+  };
+  attributes: {
+    Icon: Schema.Attribute.String & Schema.Attribute.DefaultTo<'check'>;
+    Text: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'16 Years in Business - Zero Bankruptcy'>;
+  };
+}
+
+export interface GreencoreWhyChooseQuoteSection extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_why_choose_quote_sections';
+  info: {
+    description: 'Why choose section for quote page';
+    displayName: 'Why Choose Quote Section';
+  };
+  attributes: {
+    Benefits: Schema.Attribute.Component<'greencore.why-choose-item', true>;
+    HighlightedText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Greencore India'>;
+    Title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Why Choose Greencore India ?'>;
+  };
+}
+
 export interface GreencoreWhyChooseSection extends Struct.ComponentSchema {
   collectionName: 'components_greencore_why_choose_sections';
   info: {
@@ -1202,10 +1378,10 @@ export interface GreencoreWhyChooseSection extends Struct.ComponentSchema {
     displayName: 'Why Choose Section';
   };
   attributes: {
-    CTAButton: Schema.Attribute.Component<'components.link', false>;
     Description: Schema.Attribute.RichText &
       Schema.Attribute.DefaultTo<'Engineered with advanced wood fibers and a next-gen bonding technology.'>;
-    Eyebrow: Schema.Attribute.String & Schema.Attribute.DefaultTo<'About'>;
+    HighlightedTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'About'>;
     HighlightNumber: Schema.Attribute.String & Schema.Attribute.DefaultTo<'3X'>;
     HighlightText: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'STRONGER'>;
@@ -1345,10 +1521,15 @@ declare module '@strapi/strapi' {
       'greencore.contact-form-section': GreencoreContactFormSection;
       'greencore.contact-hero': GreencoreContactHero;
       'greencore.contact-info': GreencoreContactInfo;
+      'greencore.contact-info-section': GreencoreContactInfoSection;
+      'greencore.contact-method-item': GreencoreContactMethodItem;
+      'greencore.customer-review': GreencoreCustomerReview;
+      'greencore.customer-reviews-quote-section': GreencoreCustomerReviewsQuoteSection;
       'greencore.error-404-content': GreencoreError404Content;
       'greencore.faq-item': GreencoreFaqItem;
       'greencore.faq-section': GreencoreFaqSection;
       'greencore.feature-card': GreencoreFeatureCard;
+      'greencore.feature-item': GreencoreFeatureItem;
       'greencore.featured-blog-post': GreencoreFeaturedBlogPost;
       'greencore.featured-products-section': GreencoreFeaturedProductsSection;
       'greencore.finishing-option': GreencoreFinishingOption;
@@ -1379,6 +1560,8 @@ declare module '@strapi/strapi' {
       'greencore.project-story': GreencoreProjectStory;
       'greencore.projects-grid-section': GreencoreProjectsGridSection;
       'greencore.projects-hero': GreencoreProjectsHero;
+      'greencore.request-quote-form': GreencoreRequestQuoteForm;
+      'greencore.request-quote-hero': GreencoreRequestQuoteHero;
       'greencore.request-quote-section': GreencoreRequestQuoteSection;
       'greencore.review-card': GreencoreReviewCard;
       'greencore.reviews-section': GreencoreReviewsSection;
@@ -1394,6 +1577,8 @@ declare module '@strapi/strapi' {
       'greencore.visit-factory-section': GreencoreVisitFactorySection;
       'greencore.what-we-do-section': GreencoreWhatWeDoSection;
       'greencore.why-choose-greencore-section': GreencoreWhyChooseGreencoreSection;
+      'greencore.why-choose-item': GreencoreWhyChooseItem;
+      'greencore.why-choose-quote-section': GreencoreWhyChooseQuoteSection;
       'greencore.why-choose-section': GreencoreWhyChooseSection;
       'greencore.why-honeycomb-section': GreencoreWhyHoneycombSection;
       'shared.media': SharedMedia;

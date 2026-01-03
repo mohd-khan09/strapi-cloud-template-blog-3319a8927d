@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_why_choose_quote_sections",
+  "info": {
+    "displayName": "Why Choose Quote Section",
+    "description": "Why choose section for quote page"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Why Choose Greencore India ?"
+    },
+    "HighlightedText": {
+      "type": "string",
+      "default": "Greencore India"
+    },
+    "Benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.why-choose-item"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_greencore_contact_info_sections",
+  "info": {
+    "displayName": "Contact Info Section",
+    "description": "Contact information section with multiple contact methods"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Perfect for Every Space"
+    },
+    "HighlightedText": {
+      "type": "string",
+      "default": "Every Space"
+    },
+    "Description": {
+      "type": "text",
+      "default": "Honeycomb doors are perfect for a variety of applications across industries"
+    },
+    "ContactMethods": {
+      "type": "component",
+      "repeatable": true,
+      "component": "greencore.contact-method-item"
+    }
+  }
+}

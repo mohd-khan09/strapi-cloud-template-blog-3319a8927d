@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_greencore_request_quote_forms",
+  "info": {
+    "displayName": "Request Quote Form",
+    "description": "Form configuration for request a quote"
+  },
+  "options": {},
+  "attributes": {
+    "FormTitle": {
+      "type": "string",
+      "default": "Request a Quote"
+    },
+    "NameFieldLabel": {
+      "type": "string",
+      "default": "Full Name"
+    },
+    "NameFieldPlaceholder": {
+      "type": "string",
+      "default": "Full Name"
+    },
+    "EmailFieldLabel": {
+      "type": "string",
+      "default": "Your Contact Email"
+    },
+    "EmailFieldPlaceholder": {
+      "type": "string",
+      "default": "Your Contact Email"
+    },
+    "PhoneFieldLabel": {
+      "type": "string",
+      "default": "Contact Number"
+    },
+    "PhoneFieldPlaceholder": {
+      "type": "string",
+      "default": "Contact Number"
+    },
+    "ProductFieldLabel": {
+      "type": "string",
+      "default": "An Interested Product/Project*"
+    },
+    "ProductFieldPlaceholder": {
+      "type": "string",
+      "default": "Please Select"
+    },
+    "ProductOptions": {
+      "type": "json",
+      "default": ["Door Panels", "Acoustic Panels", "Custom Project"]
+    },
+    "RequirementsFieldLabel": {
+      "type": "string",
+      "default": "Product Requirements*"
+    },
+    "RequirementsFieldPlaceholder": {
+      "type": "string",
+      "default": "Please Select"
+    },
+    "SubmitButtonText": {
+      "type": "string",
+      "default": "Request Project Quote"
+    }
+  }
+}

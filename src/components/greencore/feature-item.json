@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_greencore_feature_items",
+  "info": {
+    "displayName": "Feature Item",
+    "description": "Simple feature item with icon and text"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "string",
+      "default": "check"
+    },
+    "Text": {
+      "type": "string",
+      "default": "24 Hour Response"
+    }
+  }
+}
