@@ -16,10 +16,6 @@
       "required": true,
       "default": "all"
     },
-    "Image": {
-      "type": "media",
-      "allowedTypes": ["images"]
-    },
     "Projects": {
       "type": "relation",
       "relation": "oneToMany",
