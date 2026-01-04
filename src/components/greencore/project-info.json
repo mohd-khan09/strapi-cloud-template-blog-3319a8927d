@@ -41,6 +41,9 @@
       "required": false,
       "allowedTypes": ["images", "videos"]
     },
+    "Title": {
+      "type": "string"
+    },
     "Description": {
       "type": "richtext"
     },
