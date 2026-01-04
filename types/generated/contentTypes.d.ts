@@ -1043,9 +1043,9 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     ProjectInfo: Schema.Attribute.Component<'greencore.project-info', false>;
     publishedAt: Schema.Attribute.DateTime;
-    RelatedProjects: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::project.project'
+    RelatedProjectsSection: Schema.Attribute.Component<
+      'greencore.related-projects-section',
+      false
     >;
     ReviewsSection: Schema.Attribute.Component<
       'greencore.reviews-section',

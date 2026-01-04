@@ -35,10 +35,10 @@
       "repeatable": false,
       "component": "greencore.project-story"
     },
-    "RelatedProjects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::project.project"
+    "RelatedProjectsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.related-projects-section"
     },
     "ReviewsSection": {
       "type": "component",

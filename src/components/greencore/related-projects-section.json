@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_related_projects_sections",
+  "info": {
+    "displayName": "Related Projects Section",
+    "description": "Section displaying related projects"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "All Projects"
+    },
+    "Description": {
+      "type": "string",
+      "default": "All Projects"
+    },
+    "RelatedProjects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project"
+    }
+  }
+}

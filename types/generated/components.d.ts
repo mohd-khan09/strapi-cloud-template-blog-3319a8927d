@@ -965,6 +965,7 @@ export interface GreencoreProjectInfo extends Struct.ComponentSchema {
       Schema.Attribute.DefaultTo<'Commercial, High-Rise'>;
     ProjectTypeTitle: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Commercial, High-Rise'>;
+    Title: Schema.Attribute.String;
     Year: Schema.Attribute.String & Schema.Attribute.DefaultTo<'2023'>;
     YearTitle: Schema.Attribute.String & Schema.Attribute.DefaultTo<'2023'>;
   };
@@ -1012,6 +1013,24 @@ export interface GreencoreProjectsHero extends Struct.ComponentSchema {
     Description: Schema.Attribute.Text &
       Schema.Attribute.DefaultTo<'Every project tells a story of precision, craftsmanship, and innovation. Discover how we transform architectural visions into reality through sustainable materials and expert execution.'>;
     Title: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Our Projects'>;
+  };
+}
+
+export interface GreencoreRelatedProjectsSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_greencore_related_projects_sections';
+  info: {
+    description: 'Section displaying related projects';
+    displayName: 'Related Projects Section';
+  };
+  attributes: {
+    Description: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'All Projects'>;
+    RelatedProjects: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::project.project'
+    >;
+    Title: Schema.Attribute.String & Schema.Attribute.DefaultTo<'All Projects'>;
   };
 }
 
@@ -1563,6 +1582,7 @@ declare module '@strapi/strapi' {
       'greencore.project-story': GreencoreProjectStory;
       'greencore.projects-grid-section': GreencoreProjectsGridSection;
       'greencore.projects-hero': GreencoreProjectsHero;
+      'greencore.related-projects-section': GreencoreRelatedProjectsSection;
       'greencore.request-quote-form': GreencoreRequestQuoteForm;
       'greencore.request-quote-hero': GreencoreRequestQuoteHero;
       'greencore.request-quote-section': GreencoreRequestQuoteSection;
