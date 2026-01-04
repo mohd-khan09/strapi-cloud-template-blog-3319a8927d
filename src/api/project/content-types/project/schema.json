@@ -15,6 +15,12 @@
       "type": "uid",
       "targetField": "Title"
     },
+    "FeaturedImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
     "seo": {
       "type": "component",
       "repeatable": false,
