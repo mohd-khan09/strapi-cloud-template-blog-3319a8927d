@@ -925,7 +925,6 @@ export interface GreencoreProjectCategory extends Struct.ComponentSchema {
     CategorySlug: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'all'>;
-    Image: Schema.Attribute.Media<'images'>;
     Projects: Schema.Attribute.Relation<'oneToMany', 'api::project.project'>;
   };
 }
@@ -992,9 +991,12 @@ export interface GreencoreProjectsGridSection extends Struct.ComponentSchema {
     displayName: 'Projects Grid Section';
   };
   attributes: {
-    Categories: Schema.Attribute.Component<'greencore.project-category', true>;
     Description: Schema.Attribute.Text &
       Schema.Attribute.DefaultTo<'Browse through our portfolio of successfully delivered projects across various sectors.'>;
+    RelatedProjects: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project.project'
+    >;
     Title: Schema.Attribute.String & Schema.Attribute.DefaultTo<'All Projects'>;
   };
 }

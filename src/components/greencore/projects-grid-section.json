@@ -14,10 +14,10 @@
       "type": "text",
       "default": "Browse through our portfolio of successfully delivered projects across various sectors."
     },
-    "Categories": {
-      "type": "component",
-      "repeatable": true,
-      "component": "greencore.project-category"
+    "RelatedProjects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     }
   }
 }
