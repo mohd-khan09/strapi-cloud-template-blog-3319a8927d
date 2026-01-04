@@ -925,6 +925,7 @@ export interface GreencoreProjectCategory extends Struct.ComponentSchema {
     CategorySlug: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'all'>;
+    Image: Schema.Attribute.Media<'images'>;
     Projects: Schema.Attribute.Relation<'oneToMany', 'api::project.project'>;
   };
 }
