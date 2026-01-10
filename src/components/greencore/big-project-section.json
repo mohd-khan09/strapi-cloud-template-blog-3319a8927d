@@ -10,6 +10,10 @@
       "type": "string",
       "default": "Working on a Big Project?"
     },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "Working on a Big Project?"
+    },
     "Description": {
       "type": "text",
       "default": "If you're ordering 20+ doors for a residential complex, hotel, or commercial building, talk to our project sales team directly."

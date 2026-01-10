@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_greencore_related_products_sections",
+  "info": {
+    "displayName": "Related Products Section",
+    "description": "Section displaying related products"
+  },
+  "options": {},
+  "attributes": {
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "Related Products"
+    },
+    "Title": {
+      "type": "string",
+      "default": "Explore More GreenCore Solutions"
+    },
+    "RelatedProducts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

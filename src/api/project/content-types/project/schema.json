@@ -44,12 +44,12 @@
     "RelatedProjectsSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.related-projects-section"
+      "component": "greencore.projects-grid-section"
     },
     "ReviewsSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.reviews-section"
+      "component": "greencore.testimonials-section"
     },
     "Category": {
       "type": "enumeration",

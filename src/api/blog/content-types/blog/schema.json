@@ -56,9 +56,9 @@
       "type": "json"
     },
     "RelatedBlogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog"
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.blog-section"
     },
     "author": {
       "type": "relation",

@@ -10,13 +10,13 @@
       "type": "string",
       "default": "Why Choose Greencore India ?"
     },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "Why Choose Greencore India ?"
+    },
     "Subtitle": {
       "type": "text",
       "default": "What other suppliers can't commit, we've built our reputation on these commitments."
-    },
-    "BenefitsLabel": {
-      "type": "string",
-      "default": "Why Choose Greencore India ?"
     },
     "Benefits": {
       "type": "component",

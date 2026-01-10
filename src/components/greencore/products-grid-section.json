@@ -10,6 +10,10 @@
       "type": "string",
       "default": "Our Products"
     },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "Our Products"
+    },
     "Description": {
       "type": "text",
       "default": "Premium honeycomb furniture engineered for strength, sustainability, and savings."

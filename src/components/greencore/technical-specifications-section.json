@@ -10,6 +10,10 @@
       "type": "string",
       "default": "Technical specification"
     },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "Technical specification"
+    },
     "Description": {
       "type": "text",
       "default": "Every detail engineered for maximum performance and sustainability. From recycled materials to certified safety standards - transparency you can trust."

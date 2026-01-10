@@ -19,12 +19,12 @@
     "HeroSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.projects-hero"
+      "component": "greencore.products-hero"
     },
     "VideoSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.video-section"
+      "component": "greencore.manufacturing-video-section"
     },
     "ProjectsGridSection": {
       "type": "component",
@@ -34,7 +34,7 @@
     "MustReadCollectionsSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.must-read-collections-section"
+      "component": "greencore.blog-section"
     }
   }
 }

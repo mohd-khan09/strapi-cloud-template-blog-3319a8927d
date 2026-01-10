@@ -6,6 +6,10 @@
   },
   "options": {},
   "attributes": {
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "What Our Customers Are Saying"
+    },
     "Title": {
       "type": "string",
       "default": "What Our Customers Are Saying"

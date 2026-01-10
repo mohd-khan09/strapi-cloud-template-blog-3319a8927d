@@ -29,7 +29,7 @@
     "PerfectForEverySpaceSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.perfect-for-space-section"
+      "component": "greencore.advantages-section"
     },
     "ProductsGridSection": {
       "type": "component",

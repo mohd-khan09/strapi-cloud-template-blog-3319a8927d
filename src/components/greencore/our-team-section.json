@@ -10,6 +10,10 @@
       "type": "string",
       "default": "Our Team"
     },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "Our Team"
+    },
     "TeamMembers": {
       "type": "component",
       "repeatable": true,

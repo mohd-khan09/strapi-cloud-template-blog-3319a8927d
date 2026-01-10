@@ -10,6 +10,10 @@
       "type": "string",
       "default": "All Projects"
     },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "All Projects"
+    },
     "Description": {
       "type": "text",
       "default": "Browse through our portfolio of successfully delivered projects across various sectors."

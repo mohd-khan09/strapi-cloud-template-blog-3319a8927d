@@ -19,17 +19,17 @@
     "HeroSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.blog-landing-hero"
+      "component": "greencore.products-hero"
     },
     "VideoSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.video-section"
+      "component": "greencore.manufacturing-video-section"
     },
     "BlogsGridSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.blogs-grid-section"
+      "component": "greencore.blog-section"
     }
   }
 }

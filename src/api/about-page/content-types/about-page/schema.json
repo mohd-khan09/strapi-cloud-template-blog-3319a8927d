@@ -19,12 +19,12 @@
     "HeroSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.about-hero"
+      "component": "greencore.products-hero"
     },
     "VideoSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.video-section"
+      "component": "greencore.manufacturing-video-section"
     },
     "WhatWeDoSection": {
       "type": "component",
@@ -34,7 +34,7 @@
     "KeyBenefitsSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.key-benefits-section"
+      "component": "greencore.applications-section"
     },
     "OurImpactSection": {
       "type": "component",

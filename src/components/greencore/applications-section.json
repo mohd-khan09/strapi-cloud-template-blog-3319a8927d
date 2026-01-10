@@ -10,6 +10,10 @@
       "type": "string",
       "default": "Applications"
     },
+    "HighlightedTitle": {
+      "type": "string",
+      "default": "Applications"
+    },
     "Description": {
       "type": "text",
       "default": "From luxury hotels to municipal housing - our door solution that works everywhere. Here's where our honeycomb doors excels"

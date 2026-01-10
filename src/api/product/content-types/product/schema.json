@@ -52,22 +52,17 @@
     "KeyFeaturesSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.key-features-section"
+      "component": "greencore.advantages-section"
     },
-    "RelatedProducts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product.product"
+    "RelatedProductsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "greencore.related-products-section"
     },
     "ReviewsSection": {
       "type": "component",
       "repeatable": false,
-      "component": "greencore.reviews-section"
-    },
-    "LoadCapacityCTA": {
-      "type": "component",
-      "repeatable": false,
-      "component": "greencore.load-capacity-cta"
+      "component": "greencore.testimonials-section"
     },
     "Categories": {
       "type": "relation",

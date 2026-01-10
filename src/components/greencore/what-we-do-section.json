@@ -26,6 +26,14 @@
       "type": "richtext",
       "default": "The Make furniture stronger than wood without cutting trees. We did it: 500+ projects prove recycled paper creates stronger materials. Our mission: Make wood obsolete."
     },
+    "TeritaryHighlight": {
+      "type": "string",
+      "default": "The crazy idea:"
+    },
+    "TeritaryDescription": {
+      "type": "richtext",
+      "default": "The Make furniture stronger than wood without cutting trees. We did it: 500+ projects prove recycled paper creates stronger materials. Our mission: Make wood obsolete."
+    },
     "Image": {
       "type": "media",
       "multiple": false,
